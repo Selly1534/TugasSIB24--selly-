@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+
+    <body>
+        <form>
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="noHp">Nomor Handphone:</label><br>
+            <input type="text" id="noHp" name="noHp"><br><br>
+            <label for="jenisKelamin">Jenis Kelamin</label><br>
+            <input type="radio" id="lakilaki" name="jenisKelamin" value="Laki-laki">
+            <label for="lakilaki">Laki-laki</label><br>
+            <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+            <label for="prodi">Program Studi:</label><br>
+            <select id="prodi" name="prodi">
+                <option value="teknikInformatika">Teknik Informatika</option>
+                <option value="sistemInformasi">Sistem Informasi</option>
+                <option value="teknikIndustri">Teknik Industri</option>
+                <option value="teknikSipil">Teknik Sipil</option>
+            </select><br><br>
+            <label for="hobi">Hobi:</label><br>
+            <input type="checkbox" id="hobi1" name="hobi1" value="Membaca">
+            <label for="hobi1"> Membaca</label><br>
+            <input type="checkbox" id="hobi2" name="hobi2" value="Menulis">
+            <label for="hobi2"> Menulis</label><br>
+            <input type="checkbox" id="hobi3" name="hobi3" value="Menyanyi">
+            <label for="hobi3"> Menyanyi</label><br>
+            <input type="checkbox" id="hobi4" name="hobi4" value="Olahraga">
+            <label for="hobi4"> Olahraga</label><br><br>
+            <label for="alamat">Alamat Lengkap:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br><br>
+            <label for="foto">Foto diri:</label><br>
+            <input type="file" id="foto" name="foto" accept=".png, .jpg, .jpeg"><br><br><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            alert('Data berhasil ditambahkan!');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Javascript Fundamental</title>
+</head>
+<body>
+
+    <h1>Hy</h1>
+
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput" placeholder="Type your name">
+    <button onclick="greetUser()">Say Hello</button>
+
+    <hr>
+
+    <label for="ageInput">Enter your age:</label>
+    <input type="number" id="ageInput" placeholder="Type your age">
+    <button onclick="checkAge()">Check Age</button>
+
+    <hr>
+
+    <label for="colorInput">Enter your favorite color:</label>
+    <input type="color" id="colorInput">
+    <button onclick="displayColor()">Display Color</button>
+
+    <hr>
+
+    <script>
+        // Function to Greet User
+        function greetUser() {
+            var userName = document.getElementById("nameInput").value;
+            if (userName.trim() !== "") {
+                alert("Hello, " + userName + "!");
+            } else {
+                alert("Please enter your name.");
+            }
+        }
+
+        // Function to Check Age
+        function checkAge() {
+            var userAge = document.getElementById("ageInput").value;
+            if (userAge !== "") {
+                alert("You are " + userAge + " years old.");
+            } else {
+                alert("Please enter your age.");
+            }
+        }
+
+        // Function to Display Color
+        function displayColor() {
+            var userColor = document.getElementById("colorInput").value;
+            alert("Your favorite color is " + userColor + "!");
+        }
+    </script>
+
+</body>
+</html>
